@@ -12,5 +12,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
+  # NOTE: for root, `"" => ...` and `"/" => ...` will also work (leading forward slash is optional)
+  root to: "main#index"
+
   get "about" => "about#index"
 end
